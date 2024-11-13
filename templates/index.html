@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Resumo de Texto - Palavras chaves </title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        textarea { width: 100%; height: 150px; margin-top: 10px; }
+        #resumo { width: 100%; padding: 10px; background-color: #f4f4f4; min-height: 150px; overflow-y: auto; }
+        .warning { color: red; font-weight: bold; margin-top: 10px; }
+        .description { font-size: 0.9em; color: #555; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Resumo de Texto</h2>
+        <p class="description">
+            Este recurso de IA usa o <strong>Azure AI Services</strong> para extrair palavras-chave de um texto. Esse recurso permite identificar os principais tópicos do conteúdo.
+        </p>
+        <label for="texto">Cole seu texto aqui:</label>
+        <textarea id="texto" placeholder="Digite o texto para resumir..."></textarea>
+        <button onclick="gerarResumo()">Gerar Resumo</button>
+        <p id="word-warning" class="warning" style="display: none;">
+            Atenção: o limite de palavras é de 5120. Por favor, reduza o texto.
+        </p>
+        <h3>Resumo:</h3>
+        <div id="resumo">O resumo será exibido aqui...</div>
+    </div>
+
+    <script>
+        function contarPalavras(texto) {
+            return texto.trim().split(/\s+/).length;
+        }
+
+        function gerarResumo() {
+            const texto = document.getElementById("texto").value;
+            const wordWarning = document.getElementById("word-warning");
+            const resumoDiv = document.getElementById("resumo");
+
+            // Verificar o limite de palavras
+            const wordCount = contarPalavras(texto);
+            if (wordCount > 5120) {
+                wordWarning.style.display = "block";
+                resumoDiv.innerHTML = "O resumo será exibido aqui...";
+                return;
+            } else {
+                wordWarning.style.display = "none";
+            }
+
+            // Enviar o texto para o backend
+            fetch("/resumir", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ texto: texto })
+            })
+            .then(response => response.json())
+            .then(data => {
+                resumoDiv.innerHTML = data.resumo;
+                resumoDiv.style.minHeight = "auto"; // Ajustar o campo de saída conforme o tamanho do resumo
+            })
+            .catch(error => console.error("Erro:", error));
+        }
+    </script>
+</body>
+</html>
