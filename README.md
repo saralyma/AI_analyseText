@@ -65,8 +65,12 @@ Cole o texto no campo "Cole seu texto aqui".
 Clique no botão "Gerar Resumo".
 O resumo gerado aparecerá na seção "Resumo".
 
+<img width="567" alt="image" src="https://github.com/user-attachments/assets/50252240-fc05-4a7a-94f5-c5fa543076da">
+
 
 <img width="535" alt="image" src="https://github.com/user-attachments/assets/f80d2d20-3b40-42aa-9236-e0da174f1ca3">
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/59f472e1-8752-4a71-a08d-577f34a96f0a">
 
 
 
