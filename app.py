@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configuração do cliente Azure
 endpoint = "https://lablanguageservtest.cognitiveservices.azure.com/"
-key = "2INosKVjcQlxMnFyKlkcIfiDPLuvcQhFXZrwKBNyr91v7DmUTVWiJQQJ99AKACYeBjFXJ3w3AAAaACOGYXK4"
+key = "5OPbSVBNUGSsuw99eSu4pAjPmjU4lp38e35SO4iT85EeaAhsOaqjJQQJ99AKACYeBjFXJ3w3AAAaACOGrAvx"
 
 credential = AzureKeyCredential(key)
 client = TextAnalyticsClient(endpoint=endpoint, credential=credential)
