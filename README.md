@@ -26,8 +26,13 @@ Estrutura de Arquivos
 
 
 nome-do-repositorio/
+
 ├── app.py                   # Código principal da aplicação Flask
+
 ├── templates/
-│   └── index.html           # Página HTML com a interface do usuário
-├── requirements.txt         # Dependências do projeto
-└── README.md                # Este arquivo de documentação
+│   └── index.html           
+# Página HTML com a interface do usuário
+├── requirements.txt    
+# Dependências do projeto
+└── README.md 
+# Este arquivo de documentação
