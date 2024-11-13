@@ -52,7 +52,7 @@ Insira essas informações no arquivo app.py nas variáveis endpoint e key.
 para mais informações sobre como criar seu reposito no azure  acesse : https://learn.microsoft.com/pt-br/training/modules/analyze-text-ai-language/8-exercise-analyze-text
 
 
-no terminal, execute o seguinte comando para iniciar o servidor Flask:ython app.py
+no terminal, execute o seguinte comando para iniciar o servidor Flask:python app.py
 
 
 Acesse a Aplicação:  
@@ -60,12 +60,13 @@ Acesse a Aplicação:
 
 Abra o navegador e vá para http://127.0.0.1:5000.
 
-so:
+USO : 
 Cole o texto no campo "Cole seu texto aqui".
 Clique no botão "Gerar Resumo".
 O resumo gerado aparecerá na seção "Resumo".
 
 
+<img width="535" alt="image" src="https://github.com/user-attachments/assets/f80d2d20-3b40-42aa-9236-e0da174f1ca3">
 
 
 
