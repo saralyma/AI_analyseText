@@ -27,11 +27,36 @@ Azure AI Services para a extração de palavras-chave
 Estrutura de Arquivos
 
 
-
-nome-do-repositorio
+nome do repositorio ( ou diretorio) 
 ├── app.py                   
 ├── templates
   └── index.html           
 ├── requirements.txt    
 └── README.md 
+
+# Siga o passo a passo
+faça o clone do projeto no seu computador : git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+Instale as dependências:pip install -r requirements.txt
+crie uma conta no Azure - e crie um grupo de recursos - Azure services AI - language_text
+rie um recurso de Análise de Texto no portal Azure.
+Obtenha o endpoint e a key.
+Insira essas informações no arquivo app.py nas variáveis endpoint e key.
+para mais informações sobre como criar seu reposito no azure  acesse : https://learn.microsoft.com/pt-br/training/modules/analyze-text-ai-language/8-exercise-analyze-text
+
+o terminal, execute o seguinte comando para iniciar o servidor Flask:ython app.py
+
+cesse a Aplicação:
+
+Abra o navegador e vá para http://127.0.0.1:5000.
+
+so:
+Cole o texto no campo "Cole seu texto aqui".
+Clique no botão "Gerar Resumo".
+O resumo gerado aparecerá na seção "Resumo".
+
+
+
+
+
 
