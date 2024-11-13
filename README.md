@@ -10,7 +10,10 @@ Interface Simples: Uma página HTML permite que o usuário cole o texto, clique 
 
 # Pré-requisitos
 Conta no Azure: Necessário para configurar o Azure AI Services.
-Chave de API e Endpoint do serviço de Análise de Texto do Azure.
+
+Chave de API e Endpoint do serviço de Análise de Texto do Azure. 
+( As chaves que se encontram no projeto e so para efeito de teste , ja foram trocadas não vai funcionar ) 
+
 Python 3.x: Recomenda-se Python 3.7 ou superior.
 
 # Tecnologias Utilizadas
