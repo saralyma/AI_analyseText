@@ -24,17 +24,16 @@ Python 3.x: Recomenda-se Python 3.7 ou superior.
 
 
 
-###Estrutura de Arquivos
+### Estrutura de Arquivos
 
-'''
 - nome do repositorio ( ou diretorio) 
 - ├── app.py                   
 - ├── templates
 -  └── index.html           
 -   ── requirements.txt    
--   └── README.md 
-'''
-### Siga o passo a passo
+-   └── README.md
+
+ ### Siga o passo a passo
 faça o clone do projeto no seu computador : git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 - cd nome-do-repositorio
@@ -54,20 +53,33 @@ no terminal, execute o seguinte comando para iniciar o servidor Flask:python app
 
 Acesse a Aplicação:  
 
+- digite : Python app.py
+<br>
+__Abra o navegador e vá para http://127.0.0.1:5000.__
+<br>
 
-Abra o navegador e vá para http://127.0.0.1:5000.
-
-USO : 
-Cole o texto no campo "Cole seu texto aqui".
+como usar o APP : 
+Cole o texto no campo "Cole seu texto aqui".( existe um limite de 5120 caracteres) 
 Clique no botão "Gerar Resumo".
 O resumo gerado aparecerá na seção "Resumo".
 
-<img width="567" alt="image" src="https://github.com/user-attachments/assets/50252240-fc05-4a7a-94f5-c5fa543076da">
-
-
+<br>
+tela da IDE
+<br>
+<img width="567" alt=" digite Python run " src="https://github.com/user-attachments/assets/50252240-fc05-4a7a-94f5-c5fa543076da">
+<br>
+<br>
+Tela da aplicação 
+<br>
 <img width="535" alt="image" src="https://github.com/user-attachments/assets/f80d2d20-3b40-42aa-9236-e0da174f1ca3">
-
+<br>
+Tela demostrando o retorno dos principais assuntos no texto 
+<br>
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/59f472e1-8752-4a71-a08d-577f34a96f0a">
+<br>
+
+
+
 
 
 
